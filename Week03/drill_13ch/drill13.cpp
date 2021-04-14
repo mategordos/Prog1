@@ -1,5 +1,5 @@
 /*
-g++ drill13_ch.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o main `fltk-config --ldflags --use-images`
+g++ drill13.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o drill13 `fltk-config --ldflags --use-images`
 */
 #include "Simple_window.h"
 #include "Graph.h"
@@ -7,8 +7,7 @@ g++ drill13_ch.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o main `fltk-
 int main()
 {
 
-	Simple_window win {Point{100,100},801,1000,"My window"};
-	//azért nem 800, mert a next button miatt nem férne ki az utolsó grid oszlop
+	Simple_window win {Point{100,100},800,1000,"My window"};
 
 	int x_size = win.x_max();
 	int y_size = win.y_max()-200;
@@ -53,7 +52,7 @@ int main()
 	win.attach(chad);
 	win.attach(chad_two);
 	win.attach(chad_three);
-//3 200x200 ened
+//3 200x200 end
 
 //moving  100x100 image around
 
