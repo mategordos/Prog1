@@ -14,7 +14,6 @@ class D1 : public B1 {
 	
 public:
 	void vf() override {cout << "d1::vf() ";}
-	void f() {cout << "d1::f() ";}
 	void pvf() override {cout << "d1::pvf() ";}
 };
 

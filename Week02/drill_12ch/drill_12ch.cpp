@@ -11,7 +11,6 @@ double square(double x) { return x*x;}
 
 int main()
 {
-	using namespace Graph_lib;
 	
 	Point tl{100, 100};
 
@@ -109,6 +108,7 @@ int main()
 	win.attach(m);
 	win.attach(e);
 	win.attach(cal);
+	win.attach(sizes);
 
 	win.wait_for_button();
 
